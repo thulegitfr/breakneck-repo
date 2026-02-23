@@ -65,6 +65,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding-bottom: 2rem;
+  padding-top: 0.938rem;
 }
 
 .header-top {
@@ -73,7 +74,8 @@ header {
   width: 100%;
   padding: 1.25rem 2.5rem;
   align-items: center;
-  box-sizing: border-box;  
+  box-sizing: border-box;
+  align-self: flex-start;   
 }
 
 .nav-left {
@@ -108,11 +110,13 @@ header {
 
 
 
-header h1 {
+.header-logo {
   flex: 1;
-  color: hsl(0, 0%, 100%);
-  margin-top: 0;
-  text-align: center;
+  max-height: 15rem;    
+  max-width: 35rem;     
+  width: auto;
+  height: auto;         
+  object-fit: contain;
 }
 
 header > p {
@@ -678,23 +682,30 @@ a:hover img {
 }
 
 /* Imagery Examples */
-.imagery-examples {
-  margin: 1.5rem 0;
+.branding-subsection .branding-figure-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;              
+  justify-content: center;
+}
+
+.branding-figure {
+  flex: 1 1 30%;            
+  max-width: 30%;           
   text-align: center;
+  margin: 0;
 }
 
-.imagery-examples img {
-  max-width: 400px;
+.branding-image {
   width: 100%;
-  border-radius: 0.5rem;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  margin-bottom: 1rem;
+  border-radius: 0.5rem;    
 }
 
-.imagery-examples p {
-  font-style: italic;
+figcaption {
+  font-size: 0.9rem;        
   color: #666;
-  font-size: 0.9em;
+  font-style: italic;
+  margin-top: 0.5rem;       
 }
 
 /* Brand Section Lists */
