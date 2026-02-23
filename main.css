@@ -105,15 +105,7 @@ header {
   text-align: center;
   margin: 0;  
 }
-.hero-button {
-  background-color: #2859D4;
-  color: white;
-  padding: 0.75rem 1.875rem;
-  border-radius: 2rem;
-  text-decoration: none;
-  font-weight: bold;
-  font-family: 'Helvetica', sans-serif; 
-}
+
 
 
 header h1 {
@@ -160,6 +152,25 @@ a:hover {
   text-decoration: underline;
 }
 
+.button-main {
+  background-color: #2859D4;
+  color: white;
+  padding: 0.75rem 1.875rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Helvetica', sans-serif;
+  display: inline-block;  /* makes it behave correctly whether used on <a> or <button> */
+  cursor: pointer;
+  border: none;
+  font-size: 1rem;
+}
+
+.button-main:hover {
+  background-color: #486ECF;
+  color: white;
+  text-decoration: none;
+}
 
 /* Form Elements */
 form {
