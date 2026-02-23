@@ -1,4 +1,4 @@
-/* CSS Y2Klothing Style Guide */
+/* CSS breakneck Style Guide */
 
 /* Basic Reset and Body Styling */
 body {
@@ -16,7 +16,7 @@ h1 {
   font-family: 'Helvetica', sans-serif;
   font-weight: 700;
   font-size: 2.5em;
-  color: #2859D4;
+  color: #6883c9;
   text-align: center;
   margin-bottom: 0.625rem;
 }
@@ -25,7 +25,7 @@ h2 {
   font-family: 'Helvetica', sans-serif;
   font-weight: 700;
   font-size: 2em;
-  color: #2859D4;
+  color: #6883c9;
   padding-bottom: 0.625rem;
   margin-top: 2.5rem;
 }
@@ -34,7 +34,7 @@ h3 {
   font-family: 'Helvetica', sans-serif;
   font-weight: 700;
   font-size: 1.5em;
-  color: #2859D4;
+  color: #6883c9;
   margin-top: 1.875rem;
 }
 
@@ -53,13 +53,13 @@ p {
   color: #000000;
 }
 
-/* Header Section */
+/* Header + Hero Section */
 header {
   background-image: url('images/heroimg.jpg');
   background-size: cover;
   background-position: center;
   width: 100%;
-  min-height: 60vh;
+  min-height: 30vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -67,6 +67,7 @@ header {
   padding-bottom: 2rem;
   padding-top: 0.938rem;
 }
+
 
 .header-top {
   display: flex;
@@ -99,6 +100,22 @@ header {
   text-decoration: underline;  
 }
 
+/* MOBILE overrides - inside media query */
+@media (max-width: 48rem) {
+  .header-top {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .nav-left, .nav-right {
+    flex: none;
+    gap: 0.75rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
 .hero-bottom {
   margin-bottom: 2.5rem;
 }
@@ -107,8 +124,6 @@ header {
   text-align: center;
   margin: 0;  
 }
-
-
 
 .header-logo {
   flex: 1;
@@ -125,6 +140,9 @@ header > p {
   font-style: italic;
 }
 
+
+
+
 /* Navigation Links in Header */
 nav {
   text-align: center;
@@ -140,13 +158,13 @@ nav {
 
 
 nav a:hover {
-  background-color: #486ECF;
+  background-color: #7d93c9;
   color: #ffffff;
 }
 
 /* Regular Text Links */
 a {
-  color: #2859D4;
+  color: #6883c9;
   text-decoration: none;
   font-weight: 600;
 }
@@ -157,7 +175,7 @@ a:hover {
 }
 
 .button-main {
-  background-color: #2859D4;
+  background-color: #6883c9;
   color: white;
   padding: 0.75rem 1.875rem;
   border-radius: 2rem;
@@ -171,7 +189,7 @@ a:hover {
 }
 
 .button-main:hover {
-  background-color: #486ECF;
+  background-color: #7d93c9;
   color: white;
   text-decoration: none;
 }
@@ -216,7 +234,7 @@ select:focus {
 input[type="text"]:hover,
 input[type="number"]:hover,
 select:hover {
-  border-color: #2859D4;
+  border-color: #6883c9;
 }
 
 /* Radio Buttons */
@@ -227,7 +245,7 @@ input[type="radio"] {
 /* Submit/Reset Buttons */
 button[type="submit"],
 button[type="button"] {
-  background-color: #2859D4;
+  background-color: #6883c9;
   color: white;
   padding: 0.75rem 1.875rem;
   border: none;
@@ -264,7 +282,7 @@ code {
   font-size: 0.9em;
   overflow-x: auto;
   margin: 0.938rem 0;
-  border-left: 4px solid #2859D4;
+  border-left: 4px solid #6883c9;
 }
 
 /* Section Styling */
@@ -311,7 +329,7 @@ ol li {
   display: block;
   padding: 0.625rem 1.25rem;
   color: white;  
-  background-color: #2859D4;  
+  background-color: #6883c9;  
   text-decoration: none;
   border-radius: 2rem;
   font-weight: 600;
@@ -323,8 +341,12 @@ ol li {
 }
 
 .nav-link[aria-current="page"] {
-  background-color: #2859D4;
+  background-color: #6883c9;
   color: white;
+}
+
+.page-tagline {
+  text-align: center;
 }
 
 /* 
@@ -362,7 +384,7 @@ ol li {
 }
 
 .product-card:hover {
-  border-color: #2859D4;
+  border-color: #6883c9;
   transform: translateY(-5px);  /* Lifts card slightly on hover */
 }
 
@@ -381,7 +403,7 @@ ol li {
 }
 
 .product-card h2 a {
-  color: #2859D4;
+  color: #6883c9;
 }
 
 .product-card h2 a:hover {
@@ -396,7 +418,7 @@ ol li {
 .product-card .price {
   font-size: 1.5em;
   font-weight: bold;
-  color: #2859D4;
+  color: #6883c9;
   font-family: 'Helvetica', sans-serif;
   margin-bottom: 1rem;
 }
@@ -494,7 +516,7 @@ ol li {
 .item-details h3 {
   margin-top: 0;
   font-size: 1.2em;
-  color: #2859D4;
+  color: #6883c9;
 }
 
 .item-details p {
@@ -525,7 +547,7 @@ ol li {
 .subtotal-amount {
   font-size: 1.2em;
   font-weight: bold;
-  color: #2859D4;
+  color: #6883c9;
   font-family: 'Helvetica', sans-serif;
   margin: 0;
 }
@@ -547,13 +569,13 @@ ol li {
   background-color: #f5f5f5;
   padding: 1.563rem;
   border-radius: 0.5rem;
-  border: 2px solid #2859D4;
+  border: 2px solid #6883c9;
   margin-top: 1.25rem;
 }
 
 .cart-summary h3 {
   margin-top: 0;
-  color: #2859D4;
+  color: #6883c9;
   border-bottom: 2px solid #000000;
   padding-bottom: 0.625rem;
 }
@@ -570,18 +592,23 @@ ol li {
   justify-content: space-between;
   margin-top: 1.25rem;
   padding-top: 1.25rem;
-  border-top: 2px solid #2859D4;
+  border-top: 2px solid #6883c9;
   font-size: 1.5em;
   font-weight: bold;
   font-family: 'Helvetica', sans-serif;
 }
 
 .total-label {
-  color: #2859D4;
+  color: #6883c9;
 }
 
 .total-value {
   color: #000000;
+}
+
+footer {
+  padding: 1.25rem 2rem;
+  text-align: center;
 }
 
 /* Images as Links */
@@ -591,7 +618,7 @@ a img {
 }
 
 a:hover img {
-  border-color: #2859D4;
+  border-color: #6883c9;
 }
 
 /* Citations Section */
@@ -599,7 +626,7 @@ a:hover img {
   background-color: #f5f5f5;
   padding: 1.563rem;
   border-radius: 0.625rem;
-  border-top: 4px solid #2859D4;
+  border-top: 4px solid #6883c9;
 }
 
 #citations ul {
@@ -669,7 +696,7 @@ a:hover img {
 }
 
 .color-swatch p strong {
-  color: #2859D4;
+  color: #6883c9;
 }
 
 /* Font Examples */
@@ -677,7 +704,7 @@ a:hover img {
   background-color: #f9f9f9;
   padding: 1.5rem;
   border-radius: 0.5rem;
-  border-left: 4px solid #2859D4;
+  border-left: 4px solid #6883c9;
   margin: 1rem 0;
 }
 
@@ -720,7 +747,7 @@ figcaption {
 }
 
 #branding ul li strong {
-  color: #2643AB;
+  color: #6883c9;
 }
 
 /* Responsive adjustments */
