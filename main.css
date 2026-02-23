@@ -8,7 +8,7 @@ body {
   color: #000000;
   background-color: #FFFFFF;
   margin: 0;
-  padding: 1.25rem;
+  padding: 0rem;
 }
 
 /* Typography - Headings */
@@ -55,15 +55,72 @@ p {
 
 /* Header Section */
 header {
-  background-color: white;
-  padding: 1.875rem;
-  border-radius: 0.625rem;
+  background-image: url('images/heroimg.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1.25rem 2.5rem;
+  align-items: center;
+  box-sizing: border-box;  
+}
+
+.nav-left {
+  flex: 1;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: flex-start;
+  text-decoration: none;
+}
+
+.nav-right {
+  flex: 1;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: flex-end; 
+  text-decoration: none;   
+}
+
+
+.nav-left a:hover, .nav-right a:hover {
+  text-decoration: underline;  
+}
+
+.hero-bottom {
   margin-bottom: 2.5rem;
 }
 
+.hero-tagline {
+  text-align: center;
+  margin: 0;  
+}
+.hero-button {
+  background-color: #2859D4;
+  color: white;
+  padding: 0.75rem 1.875rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Helvetica', sans-serif; 
+}
+
+
 header h1 {
-  color: #2859D4;
+  flex: 1;
+  color: hsl(0, 0%, 100%);
   margin-top: 0;
+  text-align: center;
 }
 
 header > p {
@@ -78,16 +135,13 @@ nav {
   margin-top: 1.25rem;
 }
 
-nav a {
+
+  nav a {
   color: white;
-  background-color: #2859D4;
-  padding: 0.75rem 1.5rem;
   text-decoration: none;
-  border-radius: 0.313rem;
   font-weight: 600;
-  margin: 0.313rem;
-  display: inline-block;
 }
+
 
 nav a:hover {
   background-color: #486ECF;
@@ -106,23 +160,6 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Button Styling */
-.button-nav {
-  background-color: #2859D4;
-  color: white;
-  padding: 0.75rem 1.875rem;
-  border-radius: 2rem;
-  text-decoration: none;
-  font-weight: bold;
-  display: inline-block;
-  font-family: 'Helvetica', sans-serif;
-}
-
-.button-nav:hover {
-  background-color: #486ECF;
-  color: #ffffff;
-  text-decoration: none;
-}
 
 /* Form Elements */
 form {
@@ -218,6 +255,7 @@ code {
 /* Section Styling */
 section {
   margin-bottom: 2.5rem;
+  padding: 1.25rem 2rem;
 }
 
 section.element {
