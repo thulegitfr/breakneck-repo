@@ -727,3 +727,32 @@ a:hover img {
   object-fit: cover;
   border-radius: 0.5rem;
 }
+
+
+
+.about-section {
+  padding: 30px 20px;
+  border-bottom: 1px solid #DEDEDE;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-section h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.about-section p {
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.about-section ul {
+  padding-left: 20px;
+}
+
+.about-section ul li {
+  font-size: 1rem;
+  line-height: 2;
+}
