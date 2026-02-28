@@ -186,6 +186,7 @@ a:hover {
   cursor: pointer;
   border: none;
   font-size: 1rem;
+  border-bottom: solid lightblue;
 }
 
 .button-main:hover {
@@ -772,6 +773,7 @@ figcaption {
 .product-detail .product-image {
   width: 40%;
   flex-shrink: 0;
+  border: 1px solid lightblue;
 }
 
 .product-detail .product-image img {
@@ -842,4 +844,70 @@ figcaption {
 .about-section ul li {
   font-size: 1rem;
   line-height: 2;
+}
+
+/* sign-in styling */
+.signin-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f4f4f4;
+}
+
+.signin-box {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    text-align: center;
+}
+
+.signin-box h2 {
+    margin-bottom: 20px;
+}
+
+.signin-box label {
+    display: block;
+    text-align: left;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.signin-box input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.signin-btn {
+    display: block;
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.signin-btn:hover {
+    background: #0056b3;
+}
+
+.signup-text {
+    margin-top: 15px;
+}
+
+.signup-text a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.signup-text a:hover {
+    text-decoration: underline;
 }
