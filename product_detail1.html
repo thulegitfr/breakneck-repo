@@ -32,6 +32,37 @@
   </div>
 
 </section>
+<section class = "feedback-section">
+   <h2>Leave a Review</h2>
 
+  <form class="feedback-form">
+
+    <label for="review-name">Name</label>
+    <input type="text" id="review-name" placeholder="Enter your name" required>
+
+    <label for="review-email">Email</label>
+    <input type="email" id="review-email" placeholder="Enter your email" required>
+
+    <label>Rating</label>
+    <div class="star-rating">
+      <input type="radio" id="star5" name="rating" value="5">
+      <label for="star5">★★★★★</label>
+      <input type="radio" id="star4" name="rating" value="4">
+      <label for="star4">★★★★</label>
+      <input type="radio" id="star3" name="rating" value="3">
+      <label for="star3">★★★</label>
+      <input type="radio" id="star2" name="rating" value="2">
+      <label for="star2">★★</label>
+      <input type="radio" id="star1" name="rating" value="1">
+      <label for="star1">★</label>
+    </div>
+
+    <label for="review-comment">Review</label>
+    <textarea id="review-comment" placeholder="Write your review here..." rows="4" required></textarea>
+
+    <button type="submit" class="button-main">Submit Review</button>
+
+  </form>
+</section>
 </body>
 </html>
