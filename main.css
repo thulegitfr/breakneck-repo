@@ -802,23 +802,6 @@ figcaption {
   }
 }
 
-/* Checkout Item with Image */
-.checkout-item {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  margin-bottom: 1rem;
-}
-
-.checkout-item img {
-  width: 80px;
-  height: 80px;
-  object-fit: cover;
-  border-radius: 0.5rem;
-}
-
-
-
 .about-section {
   padding: 30px 20px;
   border-bottom: 1px solid #DEDEDE;
@@ -910,4 +893,64 @@ figcaption {
 
 .signup-text a:hover {
     text-decoration: underline;
+}
+
+.checkout-wrapper {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.checkout-left {
+  width: 60%;
+}
+
+.checkout-right {
+  width: 40%;
+  background-color: #f5f5f5;
+  padding: 1.5rem;
+}
+
+.checkout-details form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.checkout-details input[type="text"] {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-bottom: 1px solid #000;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background: transparent;
+  outline: none;
+  margin-bottom: 1rem;
+}
+
+.checkout-details input[type="submit"] {
+  background-color: black;
+  color: white;
+  padding: 1rem;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.checkout-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.checkout-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
 }
