@@ -55,7 +55,7 @@ p {
 
 /* Header + Hero Section */
 header {
-  background-image: url('images/heroimg.jpg');
+  background-image: url('images/heroimg.png');
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -182,7 +182,7 @@ a:hover {
   text-decoration: none;
   font-weight: bold;
   font-family: 'Helvetica', sans-serif;
-  display: inline-block;  /* makes it behave correctly whether used on <a> or <button> */
+  display: inline-block;  
   cursor: pointer;
   border: none;
   font-size: 1rem;
@@ -193,6 +193,31 @@ a:hover {
   background-color: #7d93c9;
   color: white;
   text-decoration: none;
+}
+
+.hero-cta-wrap {
+  display: flex;
+  justify-content: center;
+  padding: 24px 0 32px;
+}
+
+.hero-cta-btn {
+  display: inline-block;
+  padding: 8px 24px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #000;
+  color: #fff;
+  border: 1px solid #fff;
+  transition: background 0.2s, color 0.2s;
+}
+
+.hero-cta-btn:hover {
+  background: #fff;
+  color: #000;
 }
 
 /* Form Elements */
@@ -607,9 +632,167 @@ ol li {
   color: #000000;
 }
 
-footer {
-  padding: 1.25rem 2rem;
-  text-align: center;
+/* Footer */
+.site-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 3rem 2.5rem;
+  background-color: #000;
+  color: #fff;
+  gap: 2rem;
+}
+
+.footer-brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.site-footer h4 {
+  color: #fff;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.site-footer p {
+  color: #aaa;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.footer-form {
+  display: flex;
+  gap: 0.5rem;
+  background: none;
+  border: none;
+  padding: 0;
+  max-width: 100%;
+}
+
+.footer-form input[type="email"] {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 0;
+  margin-bottom: 0;
+  width: 200px;
+}
+
+.footer-form input[type="email"]::placeholder {
+  color: #aaa;
+}
+
+.footer-form input[type="submit"] {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  padding: 0.5rem 1.25rem;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 0;
+}
+
+.footer-form input[type="submit"]:hover {
+  background-color: #6883c9;
+  color: #fff;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 0;
+}
+
+.footer-nav a {
+  color: #fff;
+  font-size: 0.9rem;
+  text-decoration: none;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.footer-nav a:hover {
+  color: #6883c9;
+  text-decoration: none;
+}
+
+/* Home grid responsive */
+@media (max-width: 600px) {
+  .home-grid {
+    grid-template-columns: 1fr;
+  }
+  .tile-large, .tile-wide {
+    grid-column: span 1;
+  }
+  .site-footer {
+    flex-direction: column;
+  }
+}
+/* Home Grid */
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4px;
+  margin: 0;
+  padding: 0;
+}
+
+.grid-tile {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 4/3;
+  display: block;
+}
+
+.grid-tile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.grid-tile:hover img {
+  transform: scale(1.05);
+}
+
+.tile-large {
+  grid-column: span 2;
+}
+
+.tile-wide {
+  grid-column: span 2;
+}
+
+.tile-text {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  color: white;
+}
+
+.tile-text p.tile-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin: 0 0 4px 0;
+  color: white;
+  opacity: 0.85;
+}
+
+.tile-text h2 {
+  font-size: 1.2rem;
+  margin: 0;
+  color: white;
+  padding: 0;
+  font-weight: 700;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.5);
 }
 
 /* Images as Links */
@@ -761,6 +944,8 @@ figcaption {
     font-size: 0.9em;
   }
 }
+
+
 
 /* Product Detail Page */
 .product-detail {
